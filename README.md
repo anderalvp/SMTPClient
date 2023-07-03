@@ -5,6 +5,8 @@ The documentation of this mini-project contain have the following parts:
 - The modules imported from Python
 - SMTP connection secured by SSL (Secure Sockets Layer)
 - Attachment of a plain-text and a PDF file to send
+- Disclaimer
+- References
 
 ## Modules 
 
@@ -19,6 +21,16 @@ To send a mail using the Simple Mail Transfer Protocol we need to use the Python
 ## Attachment of a plain-text and a PDF file to send
 
 This project uses MIME messages, which allow us to send plait-text versions of a email and also HTML versions.
+
+## Disclaimer
+
+If you are using SMTP Google Server, from your sender mail you need to enable the Two Auth Factor and create an app password because you can experiment the following error:
+
+```
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted)
+```
+
+For more information and details you can check the following tutorial: [Solution to SMTPAuth Gmail](https://www.youtube.com/watch?v=gOr-RQcfjMQ)
 
 ## References
 
